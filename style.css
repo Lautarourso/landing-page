@@ -4,100 +4,211 @@
     box-sizing: border-box;
 }
 
+/* =====================================
+   HEADER
+===================================== */
+
 .header {
     width: 100%;
-    height: 120px;
-    background-color: rgb(8, 0, 83);
-
+    height: 200px;
+    background-color: rgba(21, 49, 102, 0.815);
     display: flex;
     justify-content: center;
     align-items: center;
+    transition: background-color 0.3s ease;
 }
 
-
-.calibraX {
+.header h1 {
     font-size: 50px;
     color: #ffffff;
     text-align: center;
 }
 
+
+
+/*
 .middle {
     width: 100%;
-    height: 341px;
-    margin-top: 5px;
-    background-color: #f0f0f0;
-
+    height: 40vh;
+    background-color: #92a3c9; 
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
 }
 
-.middle-content {
-    max-width: 600px;
-}
+.middle h1,
+
 
 .middle-content h1 {
+    font-size: 80px;
+    margin-bottom: 10px;
+}
+
+    */
+
+/* =====================================
+   SECCIÓN INFO DOS COLUMNAS
+===================================== */
+
+.info-section {
+    background-color: #1a2a60; /* azul claro pastel */ 
+    padding: 60px 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    height: 60vh;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.5s;
+}
+
+.info-left,
+.info-right {
+    flex: 1;
+    max-width: 500px;
+}
+
+.info-left p {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.lista-beneficios {
+    list-style: none;
+    padding: 0;
+}
+
+.lista-beneficios li {
+    margin-bottom: 8px;
+    font-size: 22px;
+    color: white;
+    position: relative;
+    padding-left: 15px;
+}
+
+.lista-beneficios li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: white;
+}
+
+
+/*faq*/
+
+.faq-section {
+    background-color: #1a2752; /* azul intermedio */
+    padding: 60px 40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    height: 90vh;
+}
+
+.faq-section h2 {
     font-size: 32px;
-    color: #080053;
+    margin-bottom: 50px;
+}
+
+.faq-item {
+    width: 100%;
+    max-width: 1000px;
     margin-bottom: 15px;
 }
 
-.middle-content p {
-    font-size: 18px;
-    color: #333;
+.faq-question {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
 }
+
+.faq-answer {
+    font-size: 18px;
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.664)
+}
+
+
+
+
+/* =====================================
+   PIE CON BOTONES
+===================================== */
 
 .bottom {
     width: 100%;
-    height: 100px;
-    background-color: white;
+    height: 15vh;
+    background-color: #0b102b; /* azul muy oscuro */
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 0 60px;
+    position: fixed; /* fijo en la parte inferior */
+    bottom: 0;
+    left: 0;
+    z-index: 1000;
 }
 
-.CalibraX {
-    font-size: 40px;
-    font-weight: bold;
-    color: white; /* o el color que quieras */
-
-    text-align: center; /* Centrar horizontalmente */
-
-}
-
-.left {
-    flex: 1;
-    display: flex;
-    justify-content: left;
-    padding-left: 60px;
-}
-
-.center {
+.left,
+.center,
+.right {
     flex: 1;
     display: flex;
     justify-content: center;
-    padding-right: 420px;
+}
 
+.left {
+    justify-content: flex-start;
 }
-.right{
+
+.right {
+    justify-content: flex-end;
+
+    
     flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    color: #ffffff;
+    font-size: 14px;
+    padding-right: 20px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }
+
+
+/* =====================================
+   BOTONES
+===================================== */
+
 .btn {
     padding: 12px 24px;
     font-size: 16px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-
+.btn:hover {
+    transform: scale(1.05);
+}
 
 .registrar {
     background-color: #28a745;
     color: white;
-    
 }
+
 .registrar:hover {
     background-color: #1e7e34;
 }
@@ -106,20 +217,39 @@
     background-color: #ff9800;
     color: white;
 }
+
 .contact:hover {
     background-color: #e68900;
 }
 
+.left .contact {
+    margin-left: 40px;
+}
+
+/* =====================================
+   ANIMACIÓN fadeIn
+===================================== */
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* =====================================
+   MODAL (sin cambios grandes)
+===================================== */
 
 .modal {
-    display: none; 
+    display: none;
     position: fixed;
     z-index: 1000;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     justify-content: center;
     align-items: center;
 }
@@ -131,9 +261,9 @@
     width: 300px;
     text-align: center;
     position: relative;
-    box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s forwards;
 }
-
 
 .close-btn {
     position: absolute;
@@ -143,6 +273,7 @@
     font-weight: bold;
     cursor: pointer;
 }
+
 .close-btn:hover {
     color: red;
 }
