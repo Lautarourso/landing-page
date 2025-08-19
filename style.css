@@ -13,9 +13,15 @@
     height: 200px;
     background-color: rgba(21, 49, 102, 0.815);
     display: flex;
-    justify-content: center;
+    justify-content: space-between; /* Distribuye los bloques a los extremos */
     align-items: center;
+    padding: 0 20px; /* Espacio lateral */
     transition: background-color 0.3s ease;
+}
+
+.leftu img {
+    height: 150px; /* Ajusta según el tamaño que quieras */
+    width: auto;
 }
 
 .header h1 {
@@ -23,6 +29,18 @@
     color: #ffffff;
     text-align: center;
 }
+
+.mid {
+    flex: 1; /* Ocupa el espacio restante para centrar el título */
+    text-align: center;
+}
+
+.rightu h1 {
+    font-size: 20px; /* Más pequeño si quieres que no ocupe tanto */
+    text-align: middle;
+    line-height: 1.2;
+}
+
 
 
 
