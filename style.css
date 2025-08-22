@@ -44,36 +44,12 @@
 
 
 
-/*
-.middle {
-    width: 100%;
-    height: 40vh;
-    background-color: #92a3c9; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-}
-
-.middle h1,
-
-
-.middle-content h1 {
-    font-size: 80px;
-    margin-bottom: 10px;
-}
-
-    */
-
 /* =====================================
    SECCIÓN INFO DOS COLUMNAS
 ===================================== */
 
 .info-section {
-    background-color: #1a2a60; /* azul claro pastel */ 
+    background-color: #1a2a60f6; /* azul claro pastel */ 
     padding: 60px 40px;
     display: flex;
     justify-content: center;
@@ -83,7 +59,7 @@
     opacity: 0;
     transform: translateY(20px);
     animation: fadeIn 1s forwards;
-    animation-delay: 0.5s;
+    animation-delay: 0.2s;
 }
 
 .info-left,
@@ -129,7 +105,11 @@
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    height: 90vh;
+    height: 110vh;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 0.6s;
 }
 
 .faq-section h2 {
@@ -157,7 +137,35 @@
 
 
 
+.middle {
+    width: 100%;
+    height: 90vh;
+    background-color: #131b49; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
+    color: rgb(255, 255, 255)
+}
 
+.ranzo{
+    align-items: left;
+
+}
+.pies{
+    align-items: center;
+    display: flex;
+
+}
+.peru{
+    align-items: right;
+    display: flex;
+    position: relative,
+}
 /* =====================================
    PIE CON BOTONES
 ===================================== */
@@ -169,7 +177,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 60px;
+    padding: 0 100px;
     position: fixed; /* fijo en la parte inferior */
     bottom: 0;
     left: 0;
@@ -223,21 +231,21 @@
 }
 
 .registrar {
-    background-color: #28a745;
+    background-color: #3420b8;
     color: white;
 }
 
 .registrar:hover {
-    background-color: #1e7e34;
+    background-color: #3420b8;
 }
 
 .contact {
-    background-color: #ff9800;
+    background-color: #3420b8;
     color: white;
 }
 
 .contact:hover {
-    background-color: #e68900;
+    background-color: #3420b8;
 }
 
 .left .contact {

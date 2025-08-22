@@ -20,5 +20,5 @@ window.addEventListener('click', (e) => {
 });
 
 registerBtn.addEventListener('click', () => {
-    window.open ('https://proyecto-production-c233.up.railway.app', "_blank");
+    window.open ('https://proyecto-zvzl.onrender.com', "_blank");
 });
