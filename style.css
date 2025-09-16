@@ -68,7 +68,7 @@ p, li {
 
 .info-section {
     background: linear-gradient(to right, rgba(26, 42, 96, 1), rgba(29, 52, 128, 0.5)),
-                url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzWL_oVAyvMPpYUhMl0tUJFZDKgzTXBtMB-Q&s") no-repeat center center;
+                url("https://broquel.ptn.gob.ar/wp-content/uploads/2023/07/2_carrusel-gasoducto-1920x1000.jpg") no-repeat center center;
     background-size: cover;
     padding: 60px 40px;
     display: flex;
@@ -99,7 +99,6 @@ p, li {
     background-size: cover;
     padding: 60px 40px;
     display: flex;
-    justify-content: flex-end; /* alinea el contenido a la derecha */
     align-items: center;
     height: 60vh;
     color: white;
@@ -108,7 +107,7 @@ p, li {
 .benefits-content {
     display: flex;
     flex-direction: column; /* uno abajo del otro */
-    align-items: flex-end;  /* alineado a la derecha */
+    align-items: flex-start;  /* alineado a la derecha */
     max-width: 500px;
 }
 

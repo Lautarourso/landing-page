@@ -2,7 +2,6 @@ const contactBtn = document.getElementById('contactBtn');
 const modal = document.getElementById('modal');
 const closeModal = document.getElementById('closeModal');
 const registerBtn = document.getElementById('btnRegistrar');
-const closeRegistro = document.getElementById('closeRegistro');
 
 
 contactBtn.addEventListener('click', () => {
@@ -15,14 +14,6 @@ closeModal.addEventListener('click', () => {
 });
 
 
-registerBtn.addEventListener('click', () => {
-    modalRegistro.style.display = 'flex';
-});
-
-// cerrar modal al tocar la X
-closeRegistro.addEventListener('click', () => {
-    modalRegistro.style.display = 'none';
-});
 
 window.addEventListener('click', (e) => {
     if (e.target === modal) {
@@ -33,9 +24,9 @@ window.addEventListener('click', (e) => {
 
 
 
-//registerBtn.addEventListener('click', () => {
-    //window.open ('https://proyecto-zvzl.onrender.com', "_blank");
-//});
+registerBtn.addEventListener('click', () => {
+    window.open ('https://proyecto-zvzl.onrender.com', "_blank");
+});
 
 
 document.querySelectorAll(".faq-question").forEach(button => {
