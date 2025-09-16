@@ -4,6 +4,24 @@
     box-sizing: border-box;
 }
 
+body {
+    font-family: 'Kanit', sans-serif;
+}
+
+
+h1, h2 {
+    font-weight: 700; /* más grueso */
+}
+
+p, li {
+    font-weight: 300; /* más liviano */
+}
+
+.btn {
+    font-weight: 600; /* intermedio */
+}
+
+
 /* =====================================
    HEADER
 ===================================== */
@@ -184,18 +202,39 @@
     width: 100%;
     max-width: 1000px;
     margin-bottom: 15px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .faq-question {
+    width: 100%;
+    text-align: left;
     font-size: 20px;
     font-weight: bold;
-    margin-bottom: 8px;
+    background: none;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 15px;
+    color: white;
+    display: flex;
+    justify-content: space-between; /* texto a la izquierda, flecha a la derecha */
+    align-items: center;
+}
+
+.arrow {
+    transition: transform 0.3s ease;
+}
+
+.arrow.rotate {
+    transform: rotate(90deg); /* la flecha apunta hacia abajo */
 }
 
 .faq-answer {
+    display: none;
+    padding: 0 15px 15px;
     font-size: 18px;
     line-height: 1.5;
-    color: rgba(255, 255, 255, 0.664)
+    color: rgba(255, 255, 255, 0.8);
 }
 
 
@@ -338,3 +377,35 @@
 .close-btn:hover {
     color: red;
 }
+
+
+/* Formulario de registro */
+.registro-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+.registro-form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.registro-form button {
+    margin-top: 10px;
+    background-color: #3420b8;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.registro-form button:hover {
+    background-color: #241582;
+}
+

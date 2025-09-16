@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tp1</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 <div class="header">
@@ -30,7 +31,7 @@
         <p>
             CalibraX nació en 2025 con la idea de detectar
             las deformaciones internas en los gasoductos que pueden dañar equipos costosos
-            y generar problemas ambientales.
+            y generar problemas ambientales, todo a un precio accesible.
         </p>
     </div>
 </div>
@@ -40,8 +41,8 @@
     <div class="benefits-content">
         <p class="beneficio-intro">Soluciones para el sector gasífero y petrolero:</p>
         <ul class="lista-beneficios">
-            <li>Sensores de alta precisión</li>
-            <li>Múltiples cámaras para detectar irregularidades</li>
+            <li>Odómetro y switches repegables para detección de choque</li>
+            <li>Cámara para detectar irregularidades</li>
             <li>Envío de resultados rápido</li>
             <li>Servicio de videos integrado</li>
         </ul>
@@ -56,7 +57,7 @@
 
         <div class="ranzo">
             <h2>¿Por que deberia registrarme?</h2>
-            <p class ="answ">Ofrecemos maquinaria economica, de calidad y facil de usar, por lo que puedes probarlo sin ninguna complicacion.<br> A continuacion, te dejamos unos videos para que veas como trabajamos</p>
+            <p class ="answ">Ofrecemos maquinaria economica y de calidad, ahorrandote dinero en equipo y personal<br> A continuacion, te dejamos unos videos para que veas como trabajamos</p>
         </div>
         <div class = "pies">
     
@@ -70,31 +71,55 @@
         
     </div>
 
-  <!-- SECCIÓN PREGUNTAS FRECUENTES -->
+
+<!-- SECCIÓN PREGUNTAS FRECUENTES -->
+<!-- SECCIÓN PREGUNTAS FRECUENTES -->
 <div class="faq-section">
     <h2>Preguntas Frecuentes</h2>
 
     <div class="faq-item">
-        <p class="faq-question">¿Cómo se detectan las irregularidades?</p>
-        <p class="faq-answer">Se utilizan switches replegables de alta precisión y  cámaras que graban en tiempo real, habilitando la deteccion de una o multiples deformaciones o irregularidades internas.</p>
+        <button class="faq-question">
+            <span>¿Cómo se detectan las irregularidades?</span>
+            <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+            Se utilizan switches replegables de alta precisión y cámaras que graban en tiempo real,
+            habilitando la detección de una o múltiples deformaciones o irregularidades internas.
+        </div>
     </div>
 
     <div class="faq-item">
-        <p class="faq-question">¿Cómo saben si es algo que necesita reparacion urgente o no?</p>
-        <p class="faq-answer">Se envian los registros del choque, las grabaciones y otros datos del gasoducto a una IA entrenada para que analize la irregularidad de la gravedad y si necesita ser respondida con urgencia.</p>
+        <button class="faq-question">
+            <span>¿Cómo saben si es algo que necesita reparación urgente o no?</span>
+            <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+            Le enviamos los registros del choque, las grabaciones y datos adicionales del gasoducto a una IA entrenada
+            para que analice si la irregularidad necesita ser respondida.
+        </div>
     </div>
 
     <div class="faq-item">
-        <p class="faq-question">¿Cómo se envían los resultados?</p>
-        <p class="faq-answer">En el momento en el que el analisis esta finalizado, le enviaremos un reporte por correo electronico con una vinculacion a su apartado de proyecto en la pagina web, para que revise todo en detalle .</p>
+        <button class="faq-question">
+            <span>¿Cómo se envían los resultados?</span>
+            <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+            Cuando el análisis está finalizado, le enviaremos un reporte por correo electrónico con un link
+            a su apartado de proyecto en la página web, para que revise todo en detalle.
+        </div>
     </div>
 
     <div class="faq-item">
-        <p class="faq-question">¿Con qué empresas trabajan?</p>
-        <p class="faq-answer">Principalmente, colaboramos con la empresa BaHisa, empresa de cañerias y gasoductos en Argentina.</p>
+        <button class="faq-question">
+            <span>¿Con qué empresas trabajan?</span>
+            <span class="arrow">▶</span>
+        </button>
+        <div class="faq-answer">
+            Principalmente, colaboramos con la empresa BaHisa, empresa especializada en cañerías y gasoductos en Argentina.
+        </div>
     </div>
 </div>
-
 
 
 
@@ -118,10 +143,27 @@
         <div class="modal-content">
             <span class="close-btn" id="closeModal">&times;</span>
             <h2>Contacto</h2>
-            <p>Email: contacto@calibraX.com</p>
+            <p>Email: calibraX@gmail.com</p>
             <p>Instagram: @calibraX</p>
         </div>
     </div>
+
+    <div class="modal" id="modalRegistro">
+        <div class="modal-content">
+            <span class="close-btn" id="closeRegistro">&times;</span>
+            <h2>Registro</h2>
+            <form class="registro-form">
+                <input type="text" placeholder="Nombre" required>
+                <input type="text" placeholder="Apellido" required>
+                <input type="text" placeholder="DNI" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="password" placeholder="Contraseña" required>
+                <input type="password" placeholder="Confirmar contraseña" required>
+                <button type="submit" class="btn registrar">Registrarme</button>
+            </form>
+        </div>
+    </div>
+
 
     <script src="cuidridi.js"></script>
 </body>
