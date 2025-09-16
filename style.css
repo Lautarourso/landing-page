@@ -9,9 +9,6 @@ body {
 }
 
 
-h1, h2 {
-    font-weight: 700; /* más grueso */
-}
 
 p, li {
     font-weight: 300; /* más liviano */
@@ -28,7 +25,7 @@ p, li {
 
 .header {
     width: 100%;
-    height: 200px;
+    height: 140px;
     background-color: rgba(21, 49, 102, 0.815);
     display: flex;
     justify-content: space-between; /* Distribuye los bloques a los extremos */
@@ -38,14 +35,22 @@ p, li {
 }
 
 .leftu img {
-    height: 150px; /* Ajusta según el tamaño que quieras */
+    height: 100px; /* Ajusta según el tamaño que quieras */
     width: auto;
 }
 
 .header h1 {
+    font-size: 30px;
+    color: #ffffff;
+    text-align: center;
+    font-weight: normal;
+}
+
+.header h2{
     font-size: 50px;
     color: #ffffff;
     text-align: center;
+    font-weight: bold;
 }
 
 .mid {
@@ -55,7 +60,7 @@ p, li {
 
 .rightu h1 {
     font-size: 20px; /* Más pequeño si quieres que no ocupe tanto */
-    text-align: middle;
+    text-align: center;
     line-height: 1.2;
 }
 
@@ -245,7 +250,7 @@ p, li {
 
 .bottom {
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     background-color: #0b102b; /* azul muy oscuro */
     display: flex;
     align-items: center;
@@ -256,6 +261,8 @@ p, li {
     left: 0;
     z-index: 1000;
 }
+
+
 
 .left,
 .center,
@@ -270,14 +277,12 @@ p, li {
 }
 
 .right {
-    justify-content: flex-end;
 
     
     flex: 1;
     display: flex;
-    justify-content: flex-end;
     color: #ffffff;
-    font-size: 14px;
+    font-size: 12.5px;
     padding-right: 20px;
     opacity: 0;
     transform: translateY(20px);
@@ -291,13 +296,20 @@ p, li {
 ===================================== */
 
 .btn {
-    padding: 12px 24px;
-    font-size: 16px;
+    padding: 10px 20px;
+    font-size: 10px;
     border: none;
     border-radius: 6px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
+
+.registrar {
+    padding: 12px 24px;  /* más alto y ancho */
+    font-size: 12px;     /* texto más grande */
+    border-radius: 6px;  /* opcional, bordes más redondeados */
+}
+
 
 .btn:hover {
     transform: scale(1.05);
@@ -313,12 +325,12 @@ p, li {
 }
 
 .contact {
-    background-color: #3420b8;
+    background-color: #3420b8d0;
     color: white;
 }
 
 .contact:hover {
-    background-color: #3420b8;
+    background-color: #3420b8d0;
 }
 
 .left .contact {
