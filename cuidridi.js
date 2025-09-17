@@ -34,7 +34,7 @@ document.querySelectorAll(".faq-question").forEach(button => {
         const answer = button.nextElementSibling;
         const arrow = button.querySelector(".arrow");
 
-        // cerrar todas las demás
+        
         document.querySelectorAll(".faq-answer").forEach(ans => {
             if (ans !== answer) ans.style.display = "none";
         });
@@ -42,7 +42,7 @@ document.querySelectorAll(".faq-question").forEach(button => {
             if (arr !== arrow) arr.classList.remove("rotate");
         });
 
-        // alternar la seleccionada
+       
         const isOpen = answer.style.display === "block";
         answer.style.display = isOpen ? "none" : "block";
         arrow.classList.toggle("rotate", !isOpen);
