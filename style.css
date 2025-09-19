@@ -134,6 +134,8 @@ p, li {
     margin: 0;
     font-size: 22px;
     color: white;
+    text-align: center;       
+
 }
 
 .lista-beneficios li {
@@ -152,14 +154,13 @@ p, li {
     margin-right: 8px;
 }
 
-.lista-beneficios img {
-    width: 200px;
-    height: auto;
-    border-radius: 10%;    
-    box-shadow: 15px 15px 10px rgba(0,0,0,0.4); 
-    margin-top: 20px;      
-    display: block;
-}
+.benefits-section img {
+    width: 150px;      /* ancho fijo */
+    height: 150px;     /* alto fijo */
+    object-fit: cover; /* mantiene proporción, recorta exceso */
+    border-radius: 8px; /* opcional, esquinas redondeadas */
+    margin-top: 10px;  /* separarlas un poco del texto */
+  }
 
 
 
