@@ -30,6 +30,10 @@ p, li {
     align-items: center;
     padding: 0 70px; 
     transition: background-color 0.3s ease;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn .75s forwards;
+    animation-delay: .75s;
 }
 
 .leftu img {
@@ -78,6 +82,10 @@ p, li {
     height: 60vh;
     text-align: center; 
     color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }
 
 .info-right {
@@ -106,6 +114,10 @@ p, li {
     align-items: flex-start;    
     height: 80vh;
     color: white;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.25s forwards;
+    animation-delay: 1.25s;
 }
 
 .benefits-content {
@@ -114,6 +126,7 @@ p, li {
     align-items: center;      
     width: 100%;
     margin: 0 auto;
+
 }
 
 .beneficio-intro {
@@ -178,7 +191,10 @@ p, li {
     animation: fadeIn 1s forwards;
     animation-delay: 1s;
     color: rgb(255, 255, 255);
-
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.5s;
 }
 
 .reg{
@@ -215,6 +231,10 @@ p, li {
     transform: translateY(20px);
     animation: fadeIn 1s forwards;
     animation-delay: 0.6s;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.75s forwards;
+    animation-delay: 1.75s;
 }
 
 .faq-section h2 {
@@ -249,20 +269,25 @@ p, li {
     transition: transform 0.3s ease;
 }
 
-.arrow.rotate {
-    transform: rotate(90deg); 
-}
-
 .faq-answer {
-    display: none;
-    padding: 0 15px 15px;
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    padding: 0 15px;
     font-size: 18px;
-    line-height: 1.5;
-    color: rgba(255, 255, 255, 0.8);
+    transition: max-height 0.5s ease, opacity 0.3s ease, padding 0.25s ease;
 }
 
 
-
+.faq-item.active .faq-answer {
+    max-height: 700px;   
+    opacity: 1;
+    padding: 15px
+  }
+  
+  .faq-item.active .arrow {
+    transform: rotate(90deg);
+  }
 
 
 
@@ -278,6 +303,10 @@ p, li {
     bottom: 0;
     left: 0;
     z-index: 1000;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1s forwards;
+    animation-delay: 1s;
 }
 
 
@@ -288,10 +317,15 @@ p, li {
     flex: 1;
     display: flex;
     justify-content: center;
+    
 }
 
 .left {
     justify-content: flex-start;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.5s;
 }
 
 .right {
@@ -304,11 +338,17 @@ p, li {
     padding-right: 20px;
     opacity: 0;
     transform: translateY(20px);
-    animation: fadeIn 1s forwards;
-    animation-delay: 1s;
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.5s;
+    
 }
 
-
+.center{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeIn 1.5s forwards;
+    animation-delay: 1.5s;
+}
 
 
 .btn {

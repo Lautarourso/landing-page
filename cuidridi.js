@@ -29,22 +29,17 @@ registerBtn.addEventListener('click', () => {
 });
 
 
+
 document.querySelectorAll(".faq-question").forEach(button => {
     button.addEventListener("click", () => {
-        const answer = button.nextElementSibling;
-        const arrow = button.querySelector(".arrow");
+        const item = button.parentElement;
 
-        
-        document.querySelectorAll(".faq-answer").forEach(ans => {
-            if (ans !== answer) ans.style.display = "none";
-        });
-        document.querySelectorAll(".arrow").forEach(arr => {
-            if (arr !== arrow) arr.classList.remove("rotate");
+        // Cerrar todas las demás
+        document.querySelectorAll(".faq-item").forEach(i => {
+            if (i !== item) i.classList.remove("active");
         });
 
-       
-        const isOpen = answer.style.display === "block";
-        answer.style.display = isOpen ? "none" : "block";
-        arrow.classList.toggle("rotate", !isOpen);
+        // Alternar la actual
+        item.classList.toggle("active");
     });
 });
